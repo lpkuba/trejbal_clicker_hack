@@ -1,0 +1,10 @@
+{
+    "name": "Trejbal Clicker Hack",
+    "description": "Rozšíření se spoustu možnostmi, made by lpkuba (https://github.com/lpkuba)",
+    "version": "beta0.1",
+    "manifest_version": 3,
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": "icon.png"
+    }
+  }
