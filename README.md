@@ -1,5 +1,5 @@
 <h1>🥷Trejbal Clicker Hack - rozšíření do prohlížeče🥷</h1>
-<p>Toto rozšíření je kompatibilní s všemi prohlížeči založenými na bázi Chromium. ✅</p>
+<p>Toto rozšíření je kompatibilní s všemi prohlížeči založenými na bázi Chromium a funguje jen na stránce Trejbal Clickeru ✅</p>
 <h3>🛠️Fíčury🛠️</h3>
 <h6>verze 0.0.1</h6>
 <ul>
@@ -17,7 +17,7 @@
 <ol>
   <li>⚙️Otevřete nastavení rozšíření vašeho prohlížeče⚙️</li>
   <li>🔧Povolte vývojářský režim pro možnost instalace vlastních rozšíření🧑‍💻</li>
-  <li>📩Buď stáhněte a extrahujte source nebo soubor *.crx📩</li>
+  <li>📩Stáhněte a extrahujte source nebo soubor *.crx📩</li>
 </ol>
 <h5>📃Při instalaci pomocí <strong>souboru *.crx:</strong>📄</h5>
 <ol start=4><li>↘️Přetáhněte soubor na stránku nastavení rozšíření</li><li>Potvrďte ve vyskakovacím okně instalaci✅</li></ol>
