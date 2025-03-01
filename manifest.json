@@ -9,13 +9,18 @@
     },
     "content_scripts": [
       {
-        "js": ["src/main.js"],
+      "js": ["src/main.js"],
         "matches": [
-          "https://trejbal.zuot.cc/*",
-          "file:///*"
+          "https://*/*"
         ]
       }
+    ],
+    "permissions": ["scripting", "activeTab", "tabs"],
+    "web_accessible_resources": [
+      {
+        "resources": ["src/inject.js"],
+        "matches": ["https://*/*"]
+      }
     ]
-    
   }
   
