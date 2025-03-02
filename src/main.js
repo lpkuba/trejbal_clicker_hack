@@ -1,4 +1,7 @@
 console.log("Content script spuštěn");
+const injectScript = document.createElement("script");
+injectScript.src = chrome.runtime.getURL("src/inject.js");
+document.documentElement.appendChild(injectScript);
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     console.log("Přijata zpráva:" + message);
@@ -9,11 +12,10 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 });
 
 
+
 function addCoins(amount){
     try {
-        const injectScript = document.createElement("script");
-        injectScript.src = chrome.runtime.getURL("src/inject.js");
-        document.documentElement.appendChild(injectScript);
+        window.postMessage({type: "FROM_EXTENSION", amount: amount}, "*");
     } catch (error) {
         console.error(error);
     }

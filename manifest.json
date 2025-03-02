@@ -11,7 +11,7 @@
       {
       "js": ["src/main.js"],
         "matches": [
-          "https://*/*"
+          "https://trejbal.zuot.cc/*"
         ]
       }
     ],
@@ -19,7 +19,7 @@
     "web_accessible_resources": [
       {
         "resources": ["src/inject.js"],
-        "matches": ["https://*/*"]
+        "matches": ["https://trejbal.zuot.cc/*"]
       }
     ]
   }
