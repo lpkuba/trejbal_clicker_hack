@@ -10,9 +10,8 @@
     "content_scripts": [
       {
       "js": ["src/main.js"],
-        "matches": [
-          "https://trejbal.zuot.cc/*"
-        ]
+      "matches": ["https://trejbal.zuot.cc/*"],
+      "run_at":"document_start"
       }
     ],
     "permissions": ["scripting", "activeTab", "tabs"],
