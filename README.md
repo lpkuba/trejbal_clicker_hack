@@ -1,12 +1,17 @@
 
 
 <h1>🥷Trejbal Clicker Hack - rozšíření do prohlížeče🥷</h1>
-<h3 style="color: red; font-size:50px"><strong>❗❗❗VÝVOJÁŘ TREJBAL CLICKERU PŘIDAL ANTI-CHEAT NA BYPASSU SE PRACUJE❗❗❗</strong></h3>
+<h3 style="color: red; font-size:50px"><strong>❗❗❗DOČASNÝ BYPASS ANTI-CHEATU BYL NAHRÁN✅✅✅</strong></h3>
 <p>Toto rozšíření je kompatibilní s všemi prohlížeči založenými na bázi Chromium a funguje jen na stránce Trejbal Clickeru ✅</p>
 <h3>🛠️Fíčury🛠️</h3>
 <h6>verze 0.0.1 ❗NEFUNKČNÍ❗</h6>
 <ul>
   <li>🪙Přidávání libovolného množství coinů ✅</li>
+</ul>
+<h6>patch 0.0.1b</h6>
+<ul>
+  <li>🔐Bypassnutý anti-cheat✅</li>
+  <li>a všechny funkce z předchozích verzí...</li>
 </ul>
 <h6>verze 0.0.2+</h6>
 <ul>
