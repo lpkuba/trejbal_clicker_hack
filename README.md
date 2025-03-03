@@ -8,7 +8,13 @@
 <ul>
   <li>🪙Přidávání libovolného množství coinů ✅</li>
 </ul>
-<h6>verze 0.0.2+</h6>
+<h6>verze 0.0.2</h6>
+<ul>
+  <li>📋Přidávání libovolného počtu vyhození od maturit↩️</li>
+  <li>❌Reset progresu🔄️</li>
+  <li>...a vše z předešlých verzí...</li>
+</ul>
+<h6>verze 0.0.3+</h6>
 <ul>
   <li>🖱️Nastavitelný autoclicker 🔧</li>
   <li>🧑🏿Black Friday - výprodej powerupů 🔧</li>
