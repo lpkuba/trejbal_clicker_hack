@@ -1,6 +1,9 @@
+//SCRIPT ROZŠÍŘENÍ
+
 let currentTab;
 nigga();
 let coinsAmountEl = document.getElementById("coins");
+let rebirthAmtEl = document.getElementById("rebirths");
 
 
 async function nigga(){
@@ -15,8 +18,22 @@ document.getElementById("coinsBtn").addEventListener("click", () => {
         return;
     }
     else{
-    chrome.tabs.sendMessage(currentTab, { action: "addCoins", amount: coinsAmountEl.value*1});
+    chrome.tabs.sendMessage(currentTab,{amount: coinsAmountEl.value*1, action: 'addCoins'});
     }
+});
+document.getElementById("rebirthBtn").addEventListener("click", () => {
+    if(isNaN(rebirthAmtEl.value)){
+        alert("Neplatné číslo!");
+        return;
+    }
+    else{
+    chrome.tabs.sendMessage(currentTab,{amount: rebirthAmtEl.value*1, action: 'addRebirths'});
+    }
+});
+
+document.getElementById("eraseBtn").addEventListener("click", () => {
+    chrome.tabs.sendMessage(currentTab,{action: 'eraseStorage'});
+
 });
 
 async function getCurrentTab() {

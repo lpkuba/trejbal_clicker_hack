@@ -4,10 +4,51 @@
     <meta charset="UTF-8">
     <style>
         body{
-            width: 200px;
+            width: 300px;
             background-color: black;
+            font-family: Bahnschrift;
+        }
+        h3, label{
             color: lightgreen;
-            display: block;
+        }
+        input{
+            width:130px;
+        }
+        button{
+            background-color: rgba(97, 97, 97, 0.116);
+            border-radius: 10px;
+            padding-left: 5px;
+            color: white;
+            transition-duration: 0.5s;
+            size: 100%;
+            width: 50px;
+        }
+        button:hover{
+            box-shadow: 0px 0px 10px 5px rgba(155, 2, 2, 0.432);
+            
+        }
+        button:active{
+            box-shadow: 0px 0px 10px 5px rgba(0, 255, 34, 0.651);
+            size: 90%;
+            
+        }
+        #eraseBtn{
+            width: 300px;
+            text-align: center;
+            background-color: rgba(255, 0, 0, 0.26);
+            margin-top: 20px;
+        }
+        #eraseBtn:active{
+            box-shadow: 0px 0px 10px 5px rgba(255, 0, 0, 0.651);
+        }
+        .cheats div {
+            display: flex; /* Use flexbox to align items */
+            justify-content: flex-end; /* Align the input and button to the right */
+            align-items: center; /* Vertically align input and button */
+            margin-bottom: 10px; /* Adds space between each row */
+        }
+        .cheats label {
+            flex-grow: 1; /* This will allow the label to take available space */
         }
     </style>
     <script src="./src/local.js" defer></script>
@@ -16,7 +57,9 @@
 <body>
     <h3>Trejbal Clicker Cheats</h3>
     <div class="cheats">
-        <input type="text" id="coins"><button id="coinsBtn">Přidat</button>
+        <label for="coins">Přidat JavaScripty: </label><input type="text" id="coins"><button id="coinsBtn">Přidat</button>
+        <label for="rebirths">Přidat rebirthy: </label><input type="text" id="rebirths"><button id="rebirthBtn">Přidat</button>
+        <button id="eraseBtn">Vymazat progress?</button>
     </div>
 </body>
 </html>
