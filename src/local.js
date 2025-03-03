@@ -1,4 +1,5 @@
 //SCRIPT ROZŠÍŘENÍ
+console.log("Script rozšíření běží!");
 
 let currentTab;
 nigga();

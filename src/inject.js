@@ -1,5 +1,4 @@
 //SCRIPT NA STRÁNCE
-
 Object.defineProperty(performance, "now", {
     value: () => 0,
     writable: false
