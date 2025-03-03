@@ -18,8 +18,11 @@ window.addEventListener("message", (event) =>{
         case "addRebirths":
             addRebirths(event);
         break;
-        case "blackfriday":
-
+        case "blackfridayON":
+            blackfriday(true);
+        break;
+        case "blackfridayOFF":
+            blackfriday(false);
         break;
         case "eraseStorage":
             eraseStorage();
@@ -58,8 +61,26 @@ function addRebirths(event){
     }
 }
 
-function blackfriday(event){
+function blackfriday(bool){
+    if(bool){
+    autoClickerPrice = 0;
+    multiClickPrice = 0;
+    hyperClickPrice = 0;
+    autohyperClickerPrice = 0;
+    mangoClickPrice = 0;
+    automangoClickerPrice = 0;
+    }
+    else{
+    alert("Ceny vráceny do odhadované hodnoty, NEPŘESNÉ!!!");
+    multiClickPrice = 10 * 2.7 * (((clickValue % 5000))%20).toFixed(0)/0.5;
+    hyperClickPrice = 5000 * 2.7 * (((clickValue % 5000))/20).toFixed(0);
+    mangoClickPrice = 10000000 * 12 * (clickValue/5000).toFixed(0);
 
+    autoClickerPrice = autoClickers * 2.2 * (((autoClickers % 5000))%50).toFixed(0);
+    autohyperClickerPrice = 20000 * 2.2 * (((autoClickers % 5000))/50).toFixed(0);
+    automangoClickerPrice = 1200000 * 12 * (autoClickers/5000).toFixed(0);
+    }
+    textFieldUpdate();
 }
 
 function eraseStorage(){
