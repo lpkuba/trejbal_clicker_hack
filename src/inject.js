@@ -76,9 +76,27 @@ function blackfriday(bool){
     hyperClickPrice = 5000 * 2.7 * (((clickValue % 5000))/20).toFixed(0);
     mangoClickPrice = 10000000 * 12 * (clickValue/5000).toFixed(0);
 
-    autoClickerPrice = autoClickers * 2.2 * (((autoClickers % 5000))%50).toFixed(0);
+    autoClickerPrice = 20 * 2.2 * (((autoClickers % 5000))%50).toFixed(0);
     autohyperClickerPrice = 20000 * 2.2 * (((autoClickers % 5000))/50).toFixed(0);
     automangoClickerPrice = 1200000 * 12 * (autoClickers/5000).toFixed(0);
+
+    if(hyperClickPrice == 0){
+        hyperClickPrice = 5000;
+    }
+    if(mangoClickPrice == 0){
+        mangoClickPrice = 10000000;
+    }
+    if(autoClickerPrice == 0){
+        autoClickerPrice = 20;
+    }
+    if(autohyperClickerPrice == 0){
+        autohyperClickerPrice = 20000;
+    }
+    if(automangoClickerPrice == 0){
+        automangoClickerPrice = 1200000;
+    }
+    
+
     }
     textFieldUpdate();
 }
