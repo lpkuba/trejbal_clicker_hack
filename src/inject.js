@@ -48,7 +48,6 @@ function addCoins(event){
             clickValue = temp;
             rebirths = temp2;
         }, 4000);
-//        alert("To už jsme za timeoutem??? MRDAT HO DO PÍČI!!!"); //debug
     };
 }
 
